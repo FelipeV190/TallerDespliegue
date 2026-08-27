@@ -30,9 +30,11 @@ python -m http.server 8000
 
 Y visitar `http://localhost:8000`.
 
-## Publicar con GitHub Pages
+## Publicar con Vercel
 
-1. En el repositorio, entra a **Settings > Pages**.
-2. En *Source* elige **Deploy from a branch**.
-3. Selecciona la rama `main` y la carpeta `/ (root)`, luego guarda.
-4. En unos minutos el sitio queda disponible en `https://<usuario>.github.io/TallerDespliegue/`.
+1. Entra a [vercel.com](https://vercel.com) e inicia sesión con tu cuenta de GitHub.
+2. Pulsa **Add New... > Project** e importa el repositorio `TallerDespliegue`.
+3. Como es un sitio estático, deja el *Framework Preset* en **Other** y no configures comandos de build ni carpeta de salida.
+4. Pulsa **Deploy**. En unos segundos el sitio queda disponible en `https://<proyecto>.vercel.app`.
+
+Cada `git push` a la rama `main` genera un nuevo despliegue automático.
