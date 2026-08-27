@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página web básica creada para el Taller de Despliegue.">
+  <title>Taller de Despliegue</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a class="nav__logo" href="#inicio">Taller<span>Despliegue</span></a>
+      <ul class="nav__links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#pasos">Pasos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <h1>Taller de Despliegue Web</h1>
+      <p>Una página estática sencilla en HTML, CSS y JavaScript, lista para publicarse con GitHub Pages.</p>
+      <button class="btn" id="saludoBtn" type="button">Saludar</button>
+      <p class="hero__mensaje" id="mensaje"></p>
+    </section>
+
+    <section class="pasos" id="pasos">
+      <h2>Pasos del despliegue</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>1. Desarrollar</h3>
+          <p>Se construye la página con HTML para la estructura, CSS para los estilos y JavaScript para la interacción.</p>
+        </article>
+        <article class="card">
+          <h3>2. Versionar</h3>
+          <p>El proyecto se guarda en un repositorio de Git y se sube a GitHub para llevar el control de cambios.</p>
+        </article>
+        <article class="card">
+          <h3>3. Publicar</h3>
+          <p>Con GitHub Pages el sitio queda disponible en internet desde la rama principal del repositorio.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <h2>Contacto</h2>
+      <form class="form" id="formContacto">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+        <label for="comentario">Comentario</label>
+        <textarea id="comentario" name="comentario" rows="4" placeholder="Cuéntanos algo"></textarea>
+
+        <button class="btn" type="submit">Enviar</button>
+        <p class="form__respuesta" id="respuesta"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="anio"></span> Taller de Despliegue. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
